@@ -3,46 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>atakah: Ejemplo HTML:5</title>
 </head>
 
 
 <body>
-    <header>
+    <header class="encabezado"> 
         <section>
             <figure>
                 <img src="./assets/logo.png" alt="logo">
             </figure>
         </section>
         <nav>
-            <ul>
-                <span>Educación</span>
-                <li> <a href="https://www.google.com/"target="_blank">Ir a Google </a></li>
-                <li><a href="">Educación General</a></li>
-                <li><a href="">Ciclos Formativos</a></li>
+            <ul class="menu-desplegable">
+                <span>Educación↓</span>
+                <div>
+                    <li> <a href="https://www.google.com/"target="_blank">Ir a Google </a></li>
+                    <li><a href="">Educación General</a></li>
+                    <li><a href="">Ciclos Formativos</a></li>
+                </div>
+                
             </ul>
-            <ul>
-                <span>Tecnología</span>
+            <ul class="menu-desplegable">
+                <span>Tecnología↓</span>
             </ul>
             <a href="">Qué Hacemos</a>
             <a href="">Quienes Somos</a>
             <a href="">Contacto</a>
-            <ul>
-                <span>Admin</span>
+            <ul class="menu-desplegable">
+                <span>Admin↓</span>
             </ul>
         </nav>        
     </header>
-    <section>
+    <section class="seccion principal">
         <main>
             <h1>Atajos de teclado para perstañas y ventanas</h1>
             <span>18 diciembre 2023</span>
             <figure>
                 <img src="https://www.tuexpertoapps.com/wp-content/uploads/2019/05/google-chrome.jpg.webp" alt="google">
             </figure>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati doloribus est suscipit possimus voluptate dolorem molestias! Vero atque asperiores sunt voluptate inventore nulla repellendus quae laboriosam, repellat nemo autem impedit.
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                      <th>Navegador</th>  
+                      <th>Motor</th>
+                      <th>CSS1</th>
+                      <th>CSS2</th>
+                      <th>CSS3</th>  
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Internet explorer</td>
+                        <td>Trident</td>
+                        <td>Completo desde la versión 6.0</td>
+                        <td>Completo desde la versión 8.0</td>
+                        <td>Prácticamente completo</td>
+                    </tr>
+                    <tr>
+                        <td>Firefox</td>
+                        <td>Gecko</td>
+                        <td>Completo</td>
+                        <td>Casi completo</td>
+                        <td>Selectores, pseudo-clases y algunas propiedades</td>
+                    </tr>
+                    <!-- <tr></tr> -->
+                    <!-- <tr></tr>
+                    <tr></tr> -->
+                </tbody>
+            </table>
+            <section>
+                <h6>Síguenos</h6>
+                <figure>
+                    <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" alt="Twitter">
+                    <img src="https://static.vecteezy.com/system/resources/previews/018/930/476/original/facebook-logo-facebook-icon-transparent-free-png.png" alt="Facebook">
+                    <img src="https://static.vecteezy.com/system/resources/previews/018/930/575/original/youtube-logo-youtube-icon-transparent-free-png.png" alt="Youtube">
+                    <img src="https://www.freeiconspng.com/thumbs/snapchat-logo/get-snapchat-logo-png-pictures-6.png" alt="Snapchat">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/480px-Instagram_icon.png" alt="Instagram">
+                    <img src="https://assets.stickpng.com/images/5842a8fba6515b1e0ad75b03.png" alt="Telegram">
+                </figure>
+            </section>
         </main>
-        <aside></aside>
+        <aside>
+            <h5>Te recomendamos</h5>
+            <article>
+                <figure>
+                    <img src="https://miro.medium.com/v2/resize:fit:1024/1*vxjAHkrXbGG6gOiPZgjeZA.jpeg" alt="Tecnologia">
+                </figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article>
+                <figure>
+                    <img src="https://miro.medium.com/v2/resize:fit:1024/1*vxjAHkrXbGG6gOiPZgjeZA.jpeg" alt="Tecnologia">
+                </figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article>
+                <figure>
+                    <img src="https://miro.medium.com/v2/resize:fit:1024/1*vxjAHkrXbGG6gOiPZgjeZA.jpeg" alt="Tecnologia">
+                </figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <h4>Escribenos desde aquí</h4>
+            <p>Por favor, rellena todos los campos</p>
+            <form action="">
+                <label for="">Tu nombre:</label>
+                <input type="text" placeholder="Ingrese su nombre">
+                <label for="">Tu correo electrónico:</label>
+                <input type="text" placeholder="Ingrese su correo">
+                <label for="">Mensaje:</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </aside>
     </section>
-    <footer>
+    <footer class="pie de pagina">
         <div></div>
         <div></div>
     </footer>
